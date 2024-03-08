@@ -92,8 +92,8 @@ class GenerateReport(APIView):
                                    ('GRID', (0, 0), (-1, -1), 1, 'grey')]))
 
 
-        table.wrapOn(pdf, 8000, 5000)
-        table.drawOn(pdf, x=200, y=200)
+        table.wrapOn(pdf, 600, 500)
+        table.drawOn(pdf, x=100, y=200)
 
         pdf.showPage()
         pdf.save()
